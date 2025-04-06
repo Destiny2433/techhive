@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="C:\Users\HP\Documents\Website Folder\destiny picture - Copy.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Home-TechHive</title>
+    <style>
+      /* Basic Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: left;
+        
+        padding: 10px 20px;
+        color: #fff;
+      }
+      nav .logo {
+        font-size: 20px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        margin: 0 10px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      nav button {
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+      nav button.open {
+        transform: rotate(90deg); /* Change the style when open */
+      }
+      .text-box {
+        text-align: center;
+        margin: 20px auto;
+      }
+      .text-box h1 {
+        font-size: 2.5em;
+      }
+      .text-box p {
+        font-size: 1.2em;
+      }
+      .text-box .h-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+      footer ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+      }
+      footer ul li {
+        margin: 0 10px;
+      }
+      footer ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      /* Responsive Design */
+      /* Mobile View */
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          display: none; /* Initially hidden */
+        }
+        nav ul.show {
+          display: flex; /* Show on click */
+        }
+        .text-box h1 {
+          font-size: 2em; /* Adjust font size for smaller screens */
+        }
+        .text-box p {
+          font-size: 1em;
+        }
+      }
+
+      /* Tablet View */
+      @media (min-width: 769px) and (max-width: 1024px) {
+        body {
+          font-size: 18px; /* Adjust font size for tablets */
+        }
+        nav ul {
+          flex-direction: row; /* Maintain horizontal menu layout */
+          display: flex; /* Ensure menu remains visible on tablets */
+        }
+        .text-box h1 {
+          font-size: 2.2em;
+        }
+        .text-box p {
+          font-size: 1.1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html">
+          <img width="100px" src="images/logo-modified.png" />
+        </a>
+        <button id="toggleButton" onclick="toggleMenu()">☰</button>
+        <div class="nav-links">
+          <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="">Apply</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="text-box">
+        <h1>TechHive</h1>
+        <p>Empowering Minds Through Technology</p>
+        <a href="" class="h-btn">About</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 TechHive. All Rights Reserved.</p>
+        <ul class="social-links">
+          <li><a href="https://twitter.com/TechHive" target="_blank">Twitter</a></li>
+          <li><a href="https://facebook.com/TechHive" target="_blank">Facebook</a></li>
+          <li><a href="https://linkedin.com/company/TechHive" target="_blank">LinkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
+    
